@@ -19,6 +19,9 @@ allowBuilds:
 blockExoticSubdeps: true
 strictDepBuilds: true
 minimumReleaseAge: 1440 # 1 day
+minimumReleaseAgeExclude:
+  - vite-plus
+  - "@voidzero-dev/*"
 packages:
   - apps/*
   - packages/*
