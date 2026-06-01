@@ -16,9 +16,19 @@ allowBuilds:
   "sharp": false
   "tiny-secp256k1": false
   "utf-8-validate": false
-blockExoticSubdeps: true
+blockExoticSubdeps: false
 strictDepBuilds: true
-minimumReleaseAge: 1440 # 1 day
+minimumReleaseAge: 60
+minimumReleaseAgeExclude:
+  - vite-plus
+  - vite
+  - vitest
+  - "@voidzero-dev/*"
+  - "@oxc-project/*"
+  - "@oxlint/*"
+  - oxlint
+  - oxfmt
+  - oxlint-tsgolint
 packages:
   - apps/*
   - packages/*
